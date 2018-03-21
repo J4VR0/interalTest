@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope) {
+	var c = this;
+	/*addItemsToCategories(c.data.categories, c.data.items);
+	function addItemsToCategories(cats, items) {
+		cats.forEach(function(cat) {
+			cat.items = [];
+			items.forEach(function (item) {
+				//if (item.category != cat.sys_id)
+					//return; 
+				
+				cat.items.push(item);
+			})
+		})
+	}*/
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.card{
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+
+}
+
+.card-img-top{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  vertical-align: middle;
+  border-style: none;
+}
+
+.card-body{
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-body a{
+  color: #007bff;
+}
+
+.card-title {
+  margin-bottom: .75rem;
+	text-align: left;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>auction_lot</id>
+        <internal>false</internal>
+        <link/>
+        <name>Auction Lot</name>
+        <option_schema>[]</option_schema>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/*var cat = $sp.getParameter('auc_event');
+	if (!cat)
+		cat = $sp.getValue("sc_catalog");  // portal catalog
+
+	var gr = new GlideRecord('sc_catalog', cat);
+	gr.get(cat);
+	data.cat = cat;*/
+	//data.title = gr.getValue("title");
+	//data.categories = getCategories(cat);
+	data.title = 'Internal Auction';
+	//data.categories = [];
+	data.items = getItems();
+  console.log('No. de items retreived: ' + data.items.length);
+	
+	function getItems() {
+		var gr = new GlideRecord('x_pdm_ia_items');
+		//gr.addQuery('sc_catalogs', cat);
+		//gr.addActiveQuery();
+		gr.orderBy('name');
+		gr.query();
+		var items = [];
+		while (gr.next()) {
+			//if (!$sp.canReadRecord("sc_cat_item", gr.getUniqueValue()))
+				//continue;
+
+			var c = {};
+			$sp.getRecordValues(c,gr,'sys_id,name,status,highest_bidder, hammer_price');
+			$sp.getRecordDisplayValues(c, gr, 'picture');
+			c.page = 'auction_item';
+			items.push(c);
+		}
+		return items;
+	}
+
+	/*function getCategories(cat) {
+		var gr = new GlideRecord('sc_category');
+		gr.addQuery('sc_catalog', cat);
+		gr.addActiveQuery();
+		gr.orderBy('title');
+		gr.query();
+		var cats = [];
+		while (gr.next()) {
+			if (!$sp.canReadRecord("sc_category", gr.getUniqueValue()))
+				continue;
+
+			var c = {};
+			$sp.getRecordValues(c,gr,'sys_id,title,parent');
+			cats.push(c);
+		}
+		return cats;
+	}*/
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>jonathanv_adm</sys_created_by>
+        <sys_created_on>2018-03-21 03:58:02</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3f45b310134ddf40f62c76666144b092</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>Auction Lot</sys_name>
+        <sys_package display_value="Internal Auction" source="x_pdm_ia">7635b9541309df40f62c76666144b0ef</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Internal Auction">7635b9541309df40f62c76666144b0ef</sys_scope>
+        <sys_update_name>sp_widget_3f45b310134ddf40f62c76666144b092</sys_update_name>
+        <sys_updated_by>jonathanv_adm</sys_updated_by>
+        <sys_updated_on>2018-03-21 15:11:44</sys_updated_on>
+        <template><![CDATA[<div class="row text-center slideanim">
+  <div class="col-sm-6 col-md-4" ng-repeat="item in ::data.items">
+    <div class="card">
+      <a href="?id={{::item.page}}&sys_id={{::item.sys_id}}" class="card-img-top">
+        <img ng-src="{{::item.picture}}" ng-if="::item.picture" class="img-responsive" width="400" height="300" />
+      </a>
+      <div class="card-body">
+        <h4 class="card-title"><a href="?id={{::item.page}}&sys_id={{::item.sys_id}}">{{::item.name}}</a></h4>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_pdm_ia_items" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ready</label>
+            <language>en</language>
+            <name>x_pdm_ia_items</name>
+            <sequence>100</sequence>
+            <sys_created_by>jonathanv_adm</sys_created_by>
+            <sys_created_on>2018-03-21 02:46:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dde4a794130ddf40f62c76666144b0fe</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>jonathanv_adm</sys_updated_by>
+            <sys_updated_on>2018-03-21 02:47:16</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In progress</label>
+            <language>en</language>
+            <name>x_pdm_ia_items</name>
+            <sequence>200</sequence>
+            <sys_created_by>jonathanv_adm</sys_created_by>
+            <sys_created_on>2018-03-21 02:46:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f5052b94130ddf40f62c76666144b06a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jonathanv_adm</sys_updated_by>
+            <sys_updated_on>2018-03-21 02:46:54</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed</label>
+            <language>en</language>
+            <name>x_pdm_ia_items</name>
+            <sequence>300</sequence>
+            <sys_created_by>jonathanv_adm</sys_created_by>
+            <sys_created_on>2018-03-21 02:47:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90252f54130ddf40f62c76666144b09a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jonathanv_adm</sys_updated_by>
+            <sys_updated_on>2018-03-21 02:47:44</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>x_pdm_ia_items</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jonathanv_adm</sys_created_by>
+            <sys_created_on>2018-03-21 02:46:29</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>bfe42f54130ddf40f62c76666144b096</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="Internal Auction" source="x_pdm_ia">7635b9541309df40f62c76666144b0ef</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Internal Auction">7635b9541309df40f62c76666144b0ef</sys_scope>
+            <sys_update_name>sys_choice_x_pdm_ia_items_status</sys_update_name>
+            <sys_updated_by>jonathanv_adm</sys_updated_by>
+            <sys_updated_on>2018-03-21 02:47:44</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

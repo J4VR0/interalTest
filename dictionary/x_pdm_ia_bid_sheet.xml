@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Bid Sheet" max_length="40" name="x_pdm_ia_bid_sheet" type="collection">
+        <element label="Auction Item" max_length="32" name="auction_item" reference="x_pdm_ia_items" type="reference"/>
+        <element label="Bid" mandatory="true" max_length="20" name="bid" type="currency"/>
+        <element label="Bidder" max_length="32" name="bidder" reference="sys_user" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <index name="index">
+            <element name="auction_item"/>
+        </index>
+        <index name="index2">
+            <element name="bidder"/>
+        </index>
+    </element>
+</database>

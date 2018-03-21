@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Events" max_length="40" name="x_pdm_ia_events" type="collection">
+        <element label="Banner" max_length="40" name="banner" type="user_image"/>
+        <element label="Date from" mandatory="true" max_length="40" name="date_from" type="glide_date"/>
+        <element label="Date to" max_length="40" name="date_to" type="glide_date"/>
+        <element label="Description" max_length="2000" name="description" type="string"/>
+        <element display="true" label="Name" mandatory="true" max_length="150" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

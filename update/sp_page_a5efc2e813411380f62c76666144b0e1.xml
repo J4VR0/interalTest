@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css/>
+        <id>auction_item</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>jonathanv_adm</sys_created_by>
+        <sys_created_on>2018-03-21 15:13:27</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a5efc2e813411380f62c76666144b0e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>auction_item</sys_name>
+        <sys_package display_value="Internal Auction" source="x_pdm_ia">7635b9541309df40f62c76666144b0ef</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Internal Auction">7635b9541309df40f62c76666144b0ef</sys_scope>
+        <sys_update_name>sp_page_a5efc2e813411380f62c76666144b0e1</sys_update_name>
+        <sys_updated_by>jonathanv_adm</sys_updated_by>
+        <sys_updated_on>2018-03-21 15:13:27</sys_updated_on>
+        <title>Auction item</title>
+    </sp_page>
+</record_update>
