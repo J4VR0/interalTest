@@ -52,17 +52,17 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>jonathanv_adm</sys_created_by>
         <sys_created_on>2018-03-21 16:36:44</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>21f2a66413811380f62c76666144b063</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b1cd0f8713819300c19835528144b033</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Number</sys_name>
         <sys_package display_value="Internal Auction" source="x_pdm_ia">7635b9541309df40f62c76666144b0ef</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Internal Auction">7635b9541309df40f62c76666144b0ef</sys_scope>
         <sys_update_name>sys_dictionary_x_pdm_ia_bid_sheet_number</sys_update_name>
-        <sys_updated_by>jonathanv_adm</sys_updated_by>
-        <sys_updated_on>2018-03-21 16:43:01</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-03-29 14:08:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

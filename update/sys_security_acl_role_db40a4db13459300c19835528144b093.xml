@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>jonathanv_adm</sys_created_by>
+        <sys_created_on>2018-03-29 20:09:24</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>db40a4db13459300c19835528144b093</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_pdm_ia_bid_sheet.bid.x_pdm_ia.bidder</sys_name>
+        <sys_package display_value="Internal Auction" source="x_pdm_ia">7635b9541309df40f62c76666144b0ef</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Internal Auction">7635b9541309df40f62c76666144b0ef</sys_scope>
+        <sys_security_acl display_value="x_pdm_ia_bid_sheet.*">2b00e0db13459300c19835528144b05b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_db40a4db13459300c19835528144b093</sys_update_name>
+        <sys_updated_by>jonathanv_adm</sys_updated_by>
+        <sys_updated_on>2018-03-29 20:09:24</sys_updated_on>
+        <sys_user_role display_value="x_pdm_ia.bidder" name="x_pdm_ia.bidder">daf7ff0313059300c19835528144b074</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

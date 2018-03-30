@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>jonathanv_adm</sys_created_by>
         <sys_created_on>2018-03-21 04:14:59</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>cc393390134ddf40f62c76666144b0c4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sc_catalog</sys_name>

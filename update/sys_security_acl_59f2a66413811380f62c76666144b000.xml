@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>jonathanv_adm</sys_created_by>
         <sys_created_on>2018-03-21 16:36:43</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>59f2a66413811380f62c76666144b000</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_pdm_ia_bid_sheet</sys_name>

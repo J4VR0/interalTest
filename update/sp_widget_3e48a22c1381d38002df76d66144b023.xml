@@ -44,7 +44,7 @@
 		}
 	}*/
 	
-	data.url = "?id=hr_vac_rules_form&sys_id=-1&query=u_user%3D";
+	data.url = "?id=new_bid_form&sys_id=-1&query=bidder=" + gs.getUserID() + '^auction_item=' + itemID;
 	
 	data.list = $sp.getWidget('widget-data-table', p);
 	
@@ -59,7 +59,7 @@
         <sys_created_on>2018-03-21 17:00:03</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>3e48a22c1381d38002df76d66144b023</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Item Bid Sheet</sys_name>
         <sys_package display_value="Internal Auction" source="x_pdm_ia">7635b9541309df40f62c76666144b0ef</sys_package>
         <sys_policy/>
@@ -67,7 +67,7 @@
         <sys_scope display_value="Internal Auction">7635b9541309df40f62c76666144b0ef</sys_scope>
         <sys_update_name>sp_widget_3e48a22c1381d38002df76d66144b023</sys_update_name>
         <sys_updated_by>jonathanv_adm</sys_updated_by>
-        <sys_updated_on>2018-03-21 17:22:07</sys_updated_on>
+        <sys_updated_on>2018-03-29 15:44:19</sys_updated_on>
         <template><![CDATA[<sp-panel rect="rect">
   <a id="new_rule" href="{{data.url}}">
 		<button type="button" class="btn btn-{{options.color}}">
